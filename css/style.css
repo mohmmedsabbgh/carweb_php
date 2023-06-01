@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'ArbFONTSJannaLTRegular';
+}
+
+@font-face {
+    font-family: 'ArbFONTSJannaLTRegular';
+    src: url('../webfonts/ArbFONTSJannaLTRegular.eot');
+    src: url('../webfonts/ArbFONTSJannaLTRegular.eot') format('embedded-opentype'),
+        url('../webfonts/ArbFONTSJannaLTRegular.woff2') format('woff2'),
+        url('../webfonts/ArbFONTSJannaLTRegular.woff') format('woff'),
+        url('../webfonts/ArbFONTSJannaLTRegular.ttf') format('truetype'),
+        url('../webfonts/ArbFONTSJannaLTRegular.svg#ArbFONTSJannaLTRegular') format('svg');
+}
+
+:root {
+    --pg-section: #F3F3F3;
+    --color-p: #768492;
+    --gold-color: #304A6E;
+    --white-color: #FFFFFF;
+    --black-color: #000;
+    --bg-input:#C2C6CE;
+}
+
+.navbar {
+    background-color: var(--pg-section);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    transition: 0.3s;
+    color: var(--gold-color);
+}
+.navbar .socialMedi{
+    justify-content: center;
+}
+
+.navbar .socialMedi a {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--black-color);
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .socialMedi a:hover {
+    background-color: var(--color-p);
+    color: var(--white-color);
+    rotate: 50deg;
+}
+
+.navbar .socialMedi svg {
+    color: var(--gold-color);
+}
+
+/* Start Style SectionOne */
+.SectionOne {
+    background: var(--pg-section);
+}
+
+.SectionOne .textSOne h2 {
+    position: relative;
+    font-size: 35px;
+    max-width: 400px;
+    line-height: 47px;
+    padding-bottom: 20px;
+}
+
+.SectionOne .textSOne h2::after {
+    position: absolute;
+    content: '';
+    width: 15%;
+    bottom: 0;
+    right: 0;
+    border-bottom-style: dotted;
+    color: var(--gold-color);
+}
+
+.SectionOne .textSOne p {
+    color: var(--color-p);
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 30px;
+}
+
+.bublicbtn {
+    position: relative;
+    z-index: 1;
+    background: var(--gold-color);
+    color: var(--white-color);
+    border: 1px solid var(--black-color);
+    font-size: 18px;
+}
+
+/*  bublick btn*/
+.mainTitle p {
+    font-size: 24px;
+    color: var(--gold-color);
+}
+
+.allBtn,
+.allBtn:hover {
+    background: var(--gold-color);
+    color: var(--white-color);
+    padding: 5px;
+    width: 83px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bublicbtn svg {
+    font-size: 15px;
+    color: var(--white-color);
+}
+
+.bublicbtn span svg {
+    color: var(--black-color);
+}
+
+.SectionOne .photoOne {
+    position: relative;
+    z-index: 1;
+}
+
+.SectionOne .photoJeep img {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 0;
+    max-width: 400px;
+    background: var(--gold-color);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Start Style SectionTow */
+.sectionTow .cardOne span {
+    position: relative;
+    z-index: 2;
+    color: var(--gold-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sectionTow .cardOne p {
+    font-size: 18px;
+}
+
+
+/* Start Style Section Four */
+.sectionFour {
+    position: relative;
+    z-index: 1212;
+    background: var(--pg-section);
+}
+
+/* .sectionFour::after {
+    position: absolute;
+    content: '';
+    width: 270px;
+    height: 200px;
+    background: var(--gold-color);
+    bottom: 0;
+    right: 0;
+} */
+
+.sectionFour::before {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 30%;
+    background: url(../img/road-b.png);
+    background-size: cover;
+    bottom: 0px;
+    left: 50PX;
+}
+
+.sectionFour .container {
+    position: relative;
+    bottom: 190px;
+}
+.serveses .container{
+    bottom: auto;
+}
+.sectionFour .cardOne {
+    background: var(--white-color);
+}
+
+.sectionFour .cardOne img {
+    width: 100%;
+}
+
+.sectionFour .cardOne .contentCard {
+    padding: 20px;
+}
+
+.sectionFour .cardOne .contentCard h2 {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.sectionFour .cardOne .contentCard p {
+    font-size: 14px;
+    color: var(--color-p);
+    line-height: 30px;
+}
+/* ========== Servises ========== */
+.serveses::after,
+.serveses::before{
+    background: transparent;
+}
+.overlay{
+    background-color: var(--pg-section);
+    direction: ltr;
+}
+.overlayy{
+    background-color: var(--gold-color);
+    padding: 10px;
+    max-width: 300px;
+    min-height: 200px;
+}
+/* Start Style Section Five */
+.sectionFive .slider p {
+    color: var(--gold-color);
+    font-size: 24px;
+}
+
+.sectionFive .slider .carousel-caption {
+    background-color: #fbaf178f;
+    padding: 0;
+    margin: 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionFive .slider .carousel-caption h5 {
+    margin: 0;
+    padding: 5px;
+}
+
+.sliderTow .carousel-item {
+    background: #f3f3f3;
+    padding: 5px;
+}
+
+.sliderTow .carousel-item p {
+    max-width: 95%;
+    line-height: 37px;
+    font-size: 20px;
+}
+
+.contentphotoslider h6 {
+    color: var(--gold-color);
+    font-size: 18px;
+}
+
+.contentphotoslider p {
+    font-size: 16px;
+    color: var(--color-p);
+}
+
+.DivTow {
+    padding: 2px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+
+.mainTitle div:nth-child(1) p {
+    color: var(--gold-color);
+}
+
+.mainTitle label {
+    cursor: pointer;
+}
+
+.sliderTow {
+    background-color: var(--gray-color);
+    padding: 5px;
+}
+
+.upup {
+    justify-content: space-between;
+}
+
+.upup .iconText svg {
+    font-size: 10rem;
+    color: var(--color-p);
+    opacity: 0.5;
+    padding: 5px;
+}
+
+.upup .contentphotoslider h6 {
+    color: var(--gold-color);
+}
+
+/* Start Style SectionSix */
+.SectionSix {
+    background: url(../img/feedback-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.SectionSix .title {
+    color: var(--gold-color);
+    font-size: 24px;
+}
+
+.SectionSix .logoCambny {
+    background: linear-gradient(10deg, #F6F6F6, #EDF4F5);
+    border-radius: 10px;
+}
+
+.SectionSix .logoCambny img {
+    transition: 0.3s ease-in-out;
+}
+
+.SectionSix .logoCambny img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Start Style SectionSeven */
+.SectionSeven {
+    position: relative;
+}
+
+/* .SectionSeven::before{
+    position: absolute;
+    content: '';
+    width: 270px;
+    height: 200px;
+    background: var(--gold-color);
+    bottom: 0;
+    left: 0;
+} */
+.photocard {
+    position: relative;
+}
+
+.contentDate {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.contentDate p {
+    background-color: #0000008e;
+    color: var(--white-color);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 16px;
+}
+.AllCard {
+    box-shadow: 0 15px 15px #ccc;
+    border-radius: 5PX;
+}
+
+.contentCardText h5 {
+    position: relative;
+    font-size: 16px;
+}
+
+.contentCardText h5::before {
+    position: absolute;
+    content: '';
+    right: -16px;
+    width: 3px;
+    height: 100%;
+    background-color: var(--gold-color);
+}
+
+.contentCardText p {
+    color: var(--color-p);
+    line-height: 24px;
+}
+
+.contentCardText .btn {
+    width: 80px;
+    font-size: 16px;
+    background-color: var(--gold-color);
+    padding: 0;
+    border-radius: 4px;
+}
+
+/* Start Style Footer */
+
+
+
+
+.footer .All{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer .Hoquk p {
+    font-size: 16px;
+}
+
+.footer .logo {
+    width: 74px;
+    height: 63px;
+    padding: 5px;
+}
+
+.footer .socialMedi a {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #707070;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+
+.footer .socialMedi a:hover {
+    background-color: var(--gold-color);
+    rotate: 10deg;
+}
+
+.footer .socialMedi svg {
+    color: var(--white-color);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================== Start Style Page About ===================== */
+.titlePage {
+    background: linear-gradient(#00000094, #00000094), url(../img/breadcrumb-bg-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.titlePage p {
+    color: var(--gold-color);
+    font-size: 30px;
+    animation: tobDown 6s ease-in-out infinite;
+}
+/* .taqseem{
+    position: relative;
+}
+.taqseem::before{
+    position: absolute;
+    content: '';
+    background-color: var(--gold-color);
+    width: 250px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+} */
+
+/* Start Style page About Me */
+.photoAbout {
+    position: relative;
+}
+
+.photoAbout .photoLogoAbout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000a6;
+    backdrop-filter: blur(2px);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gold-color);
+    font-size: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.photoAbout .photoLogoAbout img,
+svg {
+    transition: 0.3s ease-in-out;
+}
+
+.photoAbout .photoLogoAbout img:hover,
+.photoAbout .photoLogoAbout svg:hover {
+    transform: scale(1.2);
+}
+
+.contentAbout h5 , .colorP {
+    color: var(--gold-color);
+    font-size: 30px;
+}
+.contentAbout p{
+    color: var(--color-p);
+    line-height: 29px;
+}
+
+@keyframes tobDown {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(20px);
+    }
+
+    100% {}
+}
+
+/* Finsh Style page About Me */
+/* =================== Finsh Style Page About ===================== */
+
+/* =================== Start Style Page Blog ===================== */
+.numberpage ul{
+    list-style: none;
+}
+
+.numberpage ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--pg-section);
+}
+.numberpage ul li a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.numberpage ul li a.active , 
+.numberpage ul li a:hover{
+    background-color: var(--gold-color);
+    color: var(--white-color);
+}
+/* =================== Finsh Style Page Blog ===================== */
+
+.allCall{
+    direction: ltr;
+}
+.photoArtical img{
+    border-radius: 5px;
+}
+.allCall p{
+    background-color: #707070;
+    color: var(--white-color);
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.allCall svg{
+    color: var(--gold-color);
+}
+.articaltext{
+    color: var(--color-p);
+    padding: 30px;
+    box-shadow:  0 0 10px #ccc;
+    border-radius: 5px;
+}
+.articaltext p{
+    line-height: 29px;
+}
+
+/* ================= Start Style CountentUs ================= */
+.CountentUs .iframe , .CountentUs .form{
+    background-color: var(--white-color);
+    padding: 8px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+.CountentUs .form{
+    border-radius: 20px;
+}
+.CountentUs .iframe iframe{
+    height: 350px;
+}
+.CountentUs .form form div{
+    margin-bottom: 15px;
+}
+@media(max-width:500px){
+    .CountentUs .form form div{
+        flex-wrap: wrap;
+    }
+}
+.CountentUs .form form div .articalIn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.CountentUs .form form div .articalIn label{
+    margin-bottom: 10px;
+    color: var(--color-p);
+}
+.CountentUs .form form div .articalIn label span{
+    color: var(--gold-color);
+    margin-left: 10px;
+}
+.CountentUs .form form div .articalIn input , textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:var(--bg-input) ;
+}
+.CountentUs .form form div .articalIn input:focus{
+    box-shadow: 0 0 5px var(--gold-color);
+}
+.CountentUs .form form  .btn_send{
+    width: 50%;
+    margin: auto !important;
+    border: none;
+    background-color: var(--gold-color);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+
+/* Start Style Whatss App */
+.whatssapp{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 15695811;
+}
+.whatssapp .titleWhatssap {
+    position: relative;
+}
+.whatssapp .titleWhatssap::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #000000;
+    border-right: 20px solid transparent;
+    transform: rotate(-135deg);
+    top: 11px;
+    right: 40px;
+}
+.whatssapp .titleWhatssap p{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.whatssapp .iconUp{
+    background-color: var(--white-color);
+    filter: drop-shadow( 0 0 20px #888);
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50%;
+
+}
+.whatssapp .icon{
+    background-color: #25D366;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatssapp .icon a{
+    color: var(--white-color);
+    font-weight: bold;  
+    font-size: 20px;
+    
+}
+/* Finsh Style Whatss App */
+/* =================== Responsive ================== */
+
+
+@media(max-width:979px) {
+    .navbar {
+        position: relative;
+        z-index: 11111;
+    }
+}
+
+@media(max-width:762px) {
+    .SectionOne .photoJeep img {
+        display: none;
+    }
+}
+
+@media(max-width:982px) {}
+
+@media(max-width:745px) {
+
+    .SectionOne .textSOne h2,
+    .SectionOne .textSOne p {
+        margin: auto;
+    }
+
+    .SectionOne .textSOne h2::after {
+        width: 20%;
+        right: 35%;
+    }
+
+    .sectionFour::before {
+        display: none;
+    }
+}
+
+@media(max-width:455px) {
+    .sectionFour::before {
+        width: 200px;
+    }
+}

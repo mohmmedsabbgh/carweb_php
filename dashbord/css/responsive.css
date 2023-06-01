@@ -1,0 +1,38 @@
+/* Start Globle Style Search Table Filter Responsive */
+
+@media(max-width:500px) {
+    .search select {
+        width: 100%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .search form input[type="search"] {
+        width: 100% ;
+        margin-bottom: 10px;
+    }
+
+    .search form input[type="submit"] {
+        margin-bottom: 10px;
+        width: 100% ;
+    }
+
+    #customers .contentDel {
+        width: 100%;
+    }
+    .rightLeft .right {
+        height: auto;
+    }
+    .rightLeft .right .listright ul {
+        width: 108% ;
+    }
+}
+@media (max-width:896px){
+    .photoLogow{
+        display: none;
+    }
+}
+
+/* Start Globle Style Search Table Filter Responsive */

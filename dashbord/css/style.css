@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+:root {
+    --green-color: #304A6E;
+    --green-opcity: #304A6E;
+    --white-color: #FFF;
+    --bac-input: #cccccc85;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green-opcity);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green-color);
+}
+
+/* Finsh Style Page employ */
+
+/* Start Puplic Style Table */
+.taple {
+    width: 100%;
+    overflow: scroll;
+}
+
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--green-color);
+    color: white;
+    text-align: center;
+}
+
+#customers tr div svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#customers tr div svg:nth-child(1) {
+    color: var(--green-color);
+}
+
+#customers tr div svg:nth-child(2) {
+    color: #DC3545;
+}
+
+#customers .mesageDeleat {
+    /* background-color: #000000b9; */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    display: none;
+}
+
+#customers .mesageDeleat.active {
+    transition: 1s ease-in-out;
+    display: block;
+}
+
+#customers .contentDel {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    background-color: #e2e2e2;
+}
+
+#customers .contentDel h1 {
+    margin-bottom: 10px;
+}
+
+#customers .contentDel .butonClick {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#customers .contentDel .butonClick .btn {
+    border-radius: 2px;
+    width: 100px;
+}
+
+#customers .contentDel .butonClick button:nth-child(1) {
+    background-color: var(--green-color);
+}
+
+#customers .ubdateUser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000ab;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+#customers .ubdateUser.active {
+    display: block;
+}
+
+#customers .ubdateUser .poupupAddd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#customers .ubdateUser .poupupAddd form {
+    background-color: var(--white-color);
+    box-shadow: 0 10px 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+}
+
+#customers .ubdateUser .poupupAddd form .close {
+    cursor: pointer;
+    color: red;
+    width: 60px;
+    margin: auto
+}
+
+#customers .ubdateUser .poupupAddd form div {
+    margin-bottom: 5px;
+}
+
+#customers .ubdateUser .poupupAddd form input,
+#customers .ubdateUser .poupupAddd form select,
+#customers .ubdateUser .poupupAddd form textarea {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #cccccc85;
+    cursor: pointer;
+    resize: none;
+}
+
+#customers .ubdateUser .poupupAddd form input:focus,
+#customers .ubdateUser .poupupAddd form textarea:focus {
+    border: 1px solid var(--green-color);
+}
+
+#customers .ubdateUser .poupupAddd form input[type="file"] {
+    display: none;
+}
+
+#customers .ubdateUser .poupupAddd form p {
+    margin: 5px;
+    text-align: start;
+}
+
+#customers .ubdateUser .poupupAddd form p span {
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+#customers .ubdateUser .poupupAddd form label {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: burlywood;
+}
+
+#customers .ubdateUser .poupupAddd div button {
+    float: right;
+}
+
+/* Finsh Puplic Style Table */
+/* Start Globle Style Search Table Filter */
+.search form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+}
+
+.search form input[type="search"] {
+    border: none;
+    outline: none;
+    background-color: var(--bac-input);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.search form input[type="submit"] {
+    border-radius: 5px;
+}
+
+.search form input[type="search"]:focus {
+    border: 1px solid #04AA6D;
+}
+
+.search select {
+    width: 25%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #04AA6D;
+}
+
+.search select option:hover {
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+/* Finsh Globle Style Search Table Filter */
+
+/* Start Style Navbar */
+.navbar {
+    position: relative;
+    background-color: var(--green-color);
+    border-bottom: 2px solid var(--white-color);
+}
+
+.navbar .navbar-toggler svg {
+    color: var(--white-color) !important;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-brand {
+    color: var(--white-color);
+}
+
+.navbar .navbar-nav .dropdown-menu {
+    background-color: var(--green-color);
+    border: none;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: var(--white-color);
+    text-align: start;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--green-opcity);
+}
+
+.navbar form input {
+    border-radius: 0px;
+}
+
+.navbar form button {
+    border-radius: 0px;
+    border-right: none;
+    background-color: var(--green-opcity);
+    color: var(--white-color);
+}
+
+/* Finsh Style Navbar */
+
+/* Start Stayle rightLeft */
+.rightLeft {
+    overflow-x: hidden;
+}
+
+.rightLeft .right {
+    background-color: var(--green-color);
+    padding: 5px;
+    height: 140vh;
+}
+
+.rightLeft .right .listright ul {
+    width: 115%;
+}
+
+.rightLeft .right .listright ul li {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+
+.rightLeft .right .listright ul li a {
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+.rightLeft .right .listright ul li a svg {
+    margin-left: 3px;
+}
+
+.rightLeft .left {
+    padding: 10px;
+}
+
+.rightLeft .left #doughnut,
+.rightLeft .left #pie {
+    height: 400px !important;
+    margin: auto;
+}
+
+.rightLeft .left .leftcharts {
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.rightLeft .left .rightcharts {
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Finsh Stayle rightLeft */
+
+/* Start Style Page employ */
+.mainTitle {
+    justify-content: space-between;
+}
+
+.poupupAdd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #000000b0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.poupupAdd.active {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poupupAdd form {
+    background-color: var(--white-color);
+    box-shadow: 0 10px 5px #000000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+
+}
+
+.poupupAdd form .close {
+    cursor: pointer;
+    color: red;
+    width: 60px;
+    top: 0;
+}
+
+.poupupAdd form div {
+    margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.poupupAdd form div input,
+.poupupAdd form div select,
+.poupupAdd form div textarea {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #cccccc85;
+    cursor: pointer;
+    resize: none;
+}
+.poupupAdd form div textarea{
+    height:100px !important;
+}
+
+.poupupAdd form div input[type="file"] {
+    display: none;
+}
+
+.poupupAdd form div label {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: burlywood;
+}
+
+.poupupAdd form div input:focus ,
+.poupupAdd form div textarea:focus {
+    border: 1px solid var(--green-color);
+}
+
+.poupupAdd form div p {
+    margin: 5px;
+}
+
+.poupupAdd form div p span {
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.poupupAdd .selected {
+    width: 100%;
+    height: 100px;
+    background-color: #cccccc85;
+    overflow: scroll;
+    padding: 2px;
+}
+.poupupAdd .selected span{
+    display: flex;
+    align-items: center;
+}
+.poupupAdd .selected input[type="checkbox"]{
+    width: 20px !important;
+}
+.poupupAdd .selectAll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Start Style Settings User */
+.settings form div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+/* .settings form div:nth-child(2){
+    width: 49.4%;
+} */
+.settings form div input{
+    border: none;
+    background-color: #cccccca9;
+    padding: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+.settings form div input:focus{
+    border: 1px solid #0CA057;
+    border-radius: 8px;
+}
+/* Finsh Style Settings User */
+
+.photoWelcome  img{
+    border-radius: 50%;
+    filter: drop-shadow(0 0 50px #000000);
+    padding: 20px;
+    width: 400px;
+}
+.contentwelcome .contentTextWelcome{
+    background-color: var(--white-color);
+    padding: 20px;
+    filter: drop-shadow(0 20px 10px #ccc);
+    border-radius: 10px;
+}
+.contentwelcome .contentTextWelcome p{
+    max-width: 500px;
+    line-height: 30px;
+}
+.contentwelcome .contentTextWelcome ul{
+    list-style: none;
+}
+.contentwelcome .contentTextWelcome ul li{
+    margin-bottom: 20px;
+    border-right: 2px solid var(--green-opcity);
+    padding-right: 5px;
+    transition: 0.3s;
+}
+.contentwelcome .contentTextWelcome ul li:hover{
+    margin-right: 20px;
+}
+.formub{
+    background-color: #cccccc76;
+    padding: 10px;
+    border-radius: 5px;
+}
+.formub input{
+    width: 50%;
+}
+
